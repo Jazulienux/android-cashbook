@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MyCashBook</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="author">
+        Aplikasi Ini Dibuat Oleh : \nNama : M. Saifuddin Jazuli.\nNIM : 1741720146.\nTanggal : 23 Oktober 2021.
+    </string>
+</resources>

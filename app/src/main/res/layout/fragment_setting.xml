@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment.Setting">
+
+    <LinearLayout
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="textStart"
+            android:text="Pengaturan"
+            android:textSize="25dp"
+            android:fontFamily="@font/didact_gothic"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:gravity="center_horizontal"
+            tools:ignore="RtlCompat" />
+
+        <TextView
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="textStart"
+            android:text="Ganti Password"
+            android:textSize="17dp"
+            android:fontFamily="@font/didact_gothic"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:gravity="center_horizontal"
+            tools:ignore="RtlCompat" />
+
+        <View
+            android:layout_marginLeft="5dp"
+            android:layout_width="115dp"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"/>
+
+        <TextView
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="textStart"
+            android:text="Password Saat Ini"
+            android:textSize="17dp"
+            android:fontFamily="@font/didact_gothic"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:gravity="center_horizontal"
+            tools:ignore="RtlCompat" />
+
+        <EditText
+            android:textColorHint="#ffffff"
+            android:padding="10dp"
+            android:background="@drawable/bg_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="5dp"
+            android:textSize="15dp"
+            android:hint="Password Saat Ini"
+            android:inputType="textPassword"
+            android:textColor="#ffffff"
+            android:fontFamily="@font/didact_gothic"
+            android:drawablePadding="10dp"
+            android:id="@+id/pass_last"
+            android:drawableStart="@drawable/password"
+            android:drawableLeft="@drawable/password" />
+
+        <TextView
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="textStart"
+            android:text="Password Baru"
+            android:textSize="17dp"
+            android:fontFamily="@font/didact_gothic"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:gravity="center_horizontal"
+            tools:ignore="RtlCompat" />
+
+        <EditText
+            android:textColorHint="#ffffff"
+            android:padding="10dp"
+            android:inputType="textPassword"
+            android:background="@drawable/bg_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="5dp"
+            android:textSize="15dp"
+            android:hint="Password Baru"
+            android:textColor="#ffffff"
+            android:fontFamily="@font/didact_gothic"
+            android:drawablePadding="10dp"
+            android:id="@+id/pass_new"
+            android:drawableStart="@drawable/password"
+            android:drawableLeft="@drawable/password" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:id="@+id/change_password"
+            android:padding="15dp"
+            android:clickable="true"
+            app:cardElevation="5dp"
+            app:cardCornerRadius="10dp"
+            app:cardBackgroundColor="#20C073"
+            android:layout_marginTop="15dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="Simpan"
+                android:textColor="#fff"
+                android:padding="15dp"
+                android:textAlignment="center"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/didact_gothic"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                android:gravity="center_horizontal" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:id="@+id/back"
+            android:padding="15dp"
+            android:clickable="true"
+            app:cardElevation="5dp"
+            app:cardCornerRadius="10dp"
+            app:cardBackgroundColor="#f6d24c"
+            android:layout_marginTop="10dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="Kembali"
+                android:textColor="#fff"
+                android:padding="15dp"
+                android:textAlignment="center"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/didact_gothic"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                android:gravity="center_horizontal" />
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:id="@+id/linearLayout4"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/linearLayout3"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal"
+            android:gravity="bottom"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="50dp"
+            >
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/udin"
+                android:layout_gravity="bottom"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="textStart"
+                    android:text="@string/author"
+                    android:textSize="17dp"
+                    android:fontFamily="@font/didact_gothic"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:gravity="center_horizontal"
+                    tools:ignore="RtlCompat" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
